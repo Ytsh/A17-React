@@ -6,7 +6,7 @@ export function Clock (){
     useEffect(()=>{
         const tiner = setInterval (()=>{
             setTime(new Date());
-        },100) 
+        },1000) 
 
         return () => clearInterval(tiner);
     },[])
