@@ -1,0 +1,35 @@
+
+
+componentDidMount -> run once
+ComponentDidUpdate -> Run on state/prop changes
+ComponentDidUnmount -> Run when cleaning up
+
+Syntax :-
+
+    useEffect(  function/your code, [dependencies] )
+
+    useEffect(()=>{
+        //your code here //this runs after render
+    }, [dependencies])
+
+//run once
+useEffect(()=>{
+    console.log("This code runs once only").
+},[])
+
+const [data,setData] = useState()
+useEffect(()=>{
+    console.log("This code runs on render and whenever data changes").
+},[data])
+
+//generally never used
+useEffect(()=>{
+    console.log("This code runs on render and whenver any state of this compoenent changes").
+})
+
+useEffect(()=>{
+//some code
+return() => {
+        // this code runs before next run or unmount 
+}
+},[])

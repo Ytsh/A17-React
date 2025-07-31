@@ -1,0 +1,28 @@
+Live Character Counter
+  - Textarea input
+  - Show current character Counter
+  - Optional - Limit to 100 characters and show remaining
+
+  Simple Calculator
+
+ - Two input fields (num1, num2)
+ - dropdown box for +,-,/,*
+ - butttons as calculate
+ - show result below
+
+ 
+Password Strength Checker
+  Input for password
+  Show strength: Weak, Medium, Strong (based on length or characters)
+
+Real-Time Form Preview
+  Input: name, email, bio
+  Show live preview as a “profile card”
+
+Birthday Countdown
+  Input: birthdate
+  Show how many days left until next birthday
+
+Accordion (FAQs)
+  List of Q&A
+  Click a question to expand answer (hide others)
