@@ -13,6 +13,8 @@ import { TodoParent } from './components/TodoParent';
 import { CharacterCount } from './components/CharacterCount';
 import { UseEffectExample } from './components/UseEffectExample';
 import { Clock } from './components/Clock';
+import { Stopwatch } from './components/Stopwatch';
+import { Fetch } from './components/Fetch';
 
 
 //Groceries app, simialar to todo list,
@@ -28,6 +30,8 @@ function App() {
     }
   return (
     <>
+    <Fetch />
+    <Stopwatch/>
     <Clock />
     <UseEffectExample />
     <CharacterCount />
