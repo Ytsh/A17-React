@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button, Card, Col, Container, Row, Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 
 export function Fetch(){
@@ -41,6 +42,7 @@ export function Fetch(){
                                     <Card.Title>{d.title}</Card.Title>
                                     <Card.Text className="flex-grow-1">${d.price} </Card.Text>
                                     <Button variant="primary">Add to cart</Button>
+                                    <Link to={`/product/${d.id}`}>View Detail</Link>
                                 </Card.Body>
                             </Card>
                         </Col>
