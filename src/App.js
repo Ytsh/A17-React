@@ -15,6 +15,7 @@ import { UseEffectExample } from './components/UseEffectExample';
 import { Clock } from './components/Clock';
 import { Stopwatch } from './components/Stopwatch';
 import { Fetch } from './components/Fetch';
+import { LightUsingHook } from './components/LightsUsingHook';
 
 
 //Groceries app, simialar to todo list,
@@ -30,15 +31,18 @@ function App() {
     }
   return (
     <>
-    <Fetch />
+    <Counter />
+    <LightUsingHook />
+    <Lights />
+    {/* <Fetch />
     <Stopwatch/>
     <Clock />
     <UseEffectExample />
-    <CharacterCount />
+    <CharacterCount /> */}
     {/* <Form/> */}
     {/* <ParentFOrm /> */}
     {/* <TodoParent /> */}
-    <CounterWithProp counter = {counter}
+    {/* <CounterWithProp counter = {counter}
       increaseCount = {increaseCount}
       decreaseCount = {decreaseCount}
     />
@@ -46,7 +50,7 @@ function App() {
       anothermessage={counter}
       increaseCount = {increaseCount}
       decreaseCount = {decreaseCount}
-      />
+      /> */}
     {/* <Todoist/> */}
     {/* <Lights/>
     <Todoist/>
@@ -60,7 +64,7 @@ function App() {
       anothermessage="This is another message"
       />
     <div></div> */}
-    <p>
+    {/* <p>
     Hello world</p>
     <Welcome/>
     <WelcomeWithProps 
@@ -72,7 +76,7 @@ function App() {
       <Welcome/>
       <WelcomeWithProps 
         message="value"
-      />
+      /> */}
     </>
   );
 }
