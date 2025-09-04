@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button, Card, Col, Container, Row, Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useAuth } from "../Auth/AuthContext";
 
 
 export function Fetch(){
@@ -8,7 +9,8 @@ export function Fetch(){
     const [data, setData] = useState(null);
     const [loading,setLoading] = useState(true);
     const [error, setError] = useState(null);
-
+    const {user} = useAuth();
+    
     useEffect(()=>{
         setLoading(true);
         fetch('https://fakestoreapi.com/products')
@@ -58,7 +60,8 @@ export function Fetch(){
                     <Spinner animation="border" />
                 </duv>
     if (error){
-        return <p>Error: {error}</p>
+
+        return <p> {user} Error: {error}</p>
     }
 
     return (
